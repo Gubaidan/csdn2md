@@ -10,6 +10,9 @@ import java.io.IOException;
 
 public class FileUtil {
     private  static String htmlDir;
+
+
+
     private  static String mdDir;
 
     public FileUtil(String path) {
