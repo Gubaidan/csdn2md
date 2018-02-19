@@ -11,6 +11,10 @@ public class Article {
     private Date date;
 
 
+
+
+
+
     public int getId() {
         return id;
     }
