@@ -23,9 +23,9 @@ public class CorePaser {
      * @param host   csdn域名
      * @param author csdn账号
      */
-    public void parse(String host, String author,String path){
+    public void parse(String host, String author,String path, boolean img){
         Document document;
-        FileUtil fileUtil = new FileUtil(path);
+        FileUtil fileUtil = new FileUtil(path,img);
         int recordCount = 0;
         int pageCount = 1;
         while (true) {

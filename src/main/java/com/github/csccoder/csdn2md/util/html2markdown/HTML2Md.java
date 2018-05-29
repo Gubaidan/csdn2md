@@ -18,6 +18,7 @@ import org.jsoup.nodes.TextNode;
 import org.jsoup.parser.Tag;
 import org.jsoup.safety.Cleaner;
 import org.jsoup.safety.Whitelist;
+import com.github.csccoder.csdn2md.util.FileUtil;
 
 /**
  * Convert Html to MarkDown
@@ -334,6 +335,7 @@ public class HTML2Md {
     line.append("]");
     line.append("(");
     String url = element.attr("src");
+    FileUtil.getPicture(url);
     line.append(url);
     String title = element.attr("title");
     if (!title.equals("")) {
@@ -343,6 +345,7 @@ public class HTML2Md {
     }
     line.append(")");
   }
+
 
   private static void code(Element element, ArrayList<MDLine> lines) {
     lines.add(new MDLine(MDLine.MDLineType.None, 0, ""));

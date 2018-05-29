@@ -10,10 +10,11 @@ public class Main {
     private static String host = "http://blog.csdn.net";
 
     public static void main(String args[]) throws IOException {
-        //input your blog username
-        String author = "xxxxx";
-        //绝对路径，确保文件夹下有 md 和 html文件夹，需要自己新建
-        String dirPath = "xxxx";
-        new CorePaser().parse(host, author, dirPath);
+
+        String author = "hu_lichao";                           //csdn用户名
+
+        String dirPath = "/Users/gubaidan/Downloads/00000/";   //文件保存路径（绝对路径）
+
+        new CorePaser().parse(host, author, dirPath, true);  //是否爬取图片 默认false
     }
 }
