@@ -11,13 +11,6 @@ public class MDLine {
     this.content = new StringBuilder(content);
   }
 
-
-
-
-
-
-
-
   public MDLine create(String line) {
     int spaces = 0;
     while ((spaces < line.length()) && (line.charAt(spaces) == ' ')) {

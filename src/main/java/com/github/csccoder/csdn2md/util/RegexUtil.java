@@ -9,12 +9,7 @@ public class RegexUtil {
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(content);
         if(matcher.matches()){
-
-
             str=matcher.group(group);
-
-
-
         }
         return str;
     }

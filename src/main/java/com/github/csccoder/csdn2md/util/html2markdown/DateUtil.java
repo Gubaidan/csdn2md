@@ -10,14 +10,7 @@ import java.util.StringTokenizer;
 /**
  * DateUtil
  *
-
-
-
  * @author robin
-
-
-
-
  * @author refactor by Sevan Joe
  */
 public class DateUtil {

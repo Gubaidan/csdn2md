@@ -10,6 +10,7 @@ public class Article {
     private String catagory;
     private Date date;
 
+
     public int getId() {
         return id;
     }
