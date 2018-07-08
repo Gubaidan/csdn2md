@@ -18,7 +18,7 @@ public class ArticlePaser {
         Article article = new Article();
 
         String articleId=parseArticleId(url);
-        String articleTitle=document.select(".article-title-box>h6").text().trim();
+        String articleTitle=document.select(".article-title-box>h1").text().trim();
         String articleContent=document.select("#article_content").html();
         String tags[]=parseTags(document);
         String category = parseCata(document);

@@ -50,6 +50,7 @@ public class FileUtil {
 
     private void saveHtml(Article article) {
         String fileName = article.getTitle();
+        if("".equals(fileName)) return;
         fileName = (fileName == null ? null : FilePattern.matcher(fileName).replaceAll("")); //过滤文件名特殊字符
         String filePath = htmlDir + fileName;
         save(article.getContent(), filePath);
